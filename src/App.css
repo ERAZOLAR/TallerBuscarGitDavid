@@ -24,3 +24,46 @@
   
 }
 
+.Select{
+  background-color:darkblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.TituloColumnasSelect{
+  
+  display: flex;
+  justify-items: center;
+  margin-left: 35px;
+  color: greenyellow;
+}
+
+.ColumnasSelectNombre{
+  margin-left: 30px;
+
+}
+.ColumnasSelectDescripcion{
+  margin-left: 350px;
+  
+
+}
+
+.BodySelect{
+  display: flex;
+  
+}
+.SelectId{
+  margin-right: 100px;
+}
+
+.NombreSelect{
+  margin-left: 20px;
+}
+
+.DescripcionSelect{
+  margin-left: 100px;
+}
+
+.pSelect{
+  height: 40px;
+}

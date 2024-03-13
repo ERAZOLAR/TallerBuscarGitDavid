@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Tabla = ({ materias }) => {
     return (
       <div>

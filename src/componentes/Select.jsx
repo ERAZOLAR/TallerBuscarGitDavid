@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const materias = [
     {
       id: 1,
@@ -107,8 +108,8 @@ const materias = [
 
 
 
-const opciones = [
-    {value: 0, text: "Mostrar 0 de 20 materias"},
+const  opciones = [
+    { value: 0, text: "Mostrar 0 de 20 materias"},
   { value: 5, text: 'Mostrar 5 de 20 materias' },
   { value: 10, text: 'Mostrar 10 de 20 materias' },
   { value: 15, text: 'Mostrar 15 de 20 materias' },
@@ -143,14 +144,35 @@ const Select = () => {
 
       {seleccion > 0 && (
         <div className="Resultado">
-          <p>Se han seleccionado {seleccion} de 20 materias:</p>
+          <p >Se han seleccionado {seleccion} de 20 materias:</p>
+          <thead>
+            <tr className='TituloColumnasSelect'>
+                <th>ID</th>
+                <th className='ColumnasSelectNombre'>Nombre</th>
+                <th className='ColumnasSelectDescripcion'>Descripción</th>
+            </tr>
+          </thead>
+                   
           <ul>
+          
             {materiasFiltradas.map((materia) => (
               <li key={materia.id}>
-                {`ID: ${materia.id} - Nombre: ${materia.nombre} - Descripción: ${materia.descripcion}`}
+                {/*{`ID: ${materia.id} - Nombre: ${materia.nombre} - Descripción: ${materia.descripcion}`}*/}
+                
+                
+                <table>        
+                                        
+                  
+                  <tbody className='BodySelect'>
+                    <td >{materia.id}</td>
+                    <td className='NombreSelect'>{materia.nombre}</td>
+                    <td className='DescripcionSelect'>{materia.descripcion}</td>
+                  </tbody>
+                </table>
               </li>
             ))}
           </ul>
+          
         </div>
       )}
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Buscador from './componentes/Buscador';
 import Tabla from './componentes/Tabla';
-import './App.css'
+import './App.css';
 import Select from './componentes/Select';
 
 
@@ -124,6 +124,7 @@ const App = () => {
 
       <Buscador onFiltrar={handleBusqueda} />
       {busqueda.length > 0 && <Tabla materias={materias.filter((materia) => materia.nombre.toLowerCase().includes(busqueda.toLowerCase()))} />}
+      <h4>HAZ UN FILTRO DE MATERIAS POR UN RANGO</h4>
       <Select />
     
     </div>

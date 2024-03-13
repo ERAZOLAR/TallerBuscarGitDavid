@@ -3,6 +3,7 @@ import Buscador from './componentes/Buscador';
 import Tabla from './componentes/Tabla';
 import './App.css'
 
+
 const materias = [
   {
     id: 1,
@@ -122,6 +123,8 @@ const App = () => {
 
       <Buscador onFiltrar={handleBusqueda} />
       {busqueda.length > 0 && <Tabla materias={materias.filter((materia) => materia.nombre.toLowerCase().includes(busqueda.toLowerCase()))} />}
+      
+    
     </div>
   );
 };
